@@ -31,8 +31,26 @@
     
     <hr />
     
+    <br>
     <br class="clear" />
+      <%= yield %>
+    <br>
+    <br>
+    <br>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="row">
+          <div class="col-6">
+            <%= link_to "Show me more!", "#", class: 'next-quote' %>          
+          </div>
+          <div class="col-6 footer-blurb">
+            Clearly Colorado bred...
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>  
     
-    <%= yield %>
   </body>
 </html>
